@@ -19,6 +19,12 @@ body {
     background-color: var(--primary);
 }
 
+.tiles-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 .tilesection {
     display: flex;
     justify-content: space-around;
@@ -28,8 +34,9 @@ body {
 }
 
 .menuetile {
-    width: 200px;
-    height: 200px;
+    flex: 1;
+    max-width: 33%;
+    height: 33%;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 8px var(--grey2);
@@ -39,6 +46,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--primary2);
+    font-family: var(--font);
+    color: var(--grey3);
 }
 
 .menuetile img {
