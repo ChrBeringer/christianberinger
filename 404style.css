@@ -1,0 +1,48 @@
+@use postcss-simple-vars;
+@use postcss-nested;
+
+/* colors */
+$blue: #293b49;
+$pink: #fdabaf;
+$pink-light: #ffe0e6;
+$green: #04cba0;
+$green-dark: #01ac88;
+$white: white;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  color: $blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.number {
+  font-weight: 900;
